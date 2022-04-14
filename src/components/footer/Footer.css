@@ -1,0 +1,60 @@
+/* **************************** styles related to top footer **********************/
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(35 47 63);
+  width: 100%;
+  padding-bottom: 80px;
+  color: white;
+  margin-top: 20px;
+}
+.footer-top {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(129, 126, 126);
+  justify-content: space-evenly;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 13px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer-top-heading {
+  margin-bottom: 14px;
+  margin-top: 10px;
+}
+.footer-top-rest {
+  margin-bottom: 5px;
+}
+/* **********************footer bottom part**************************************/
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.footer-bottom > img {
+  cursor: pointer;
+  align-self: center;
+  margin-top: 20px;
+}
+.copyright-footer {
+  color: white;
+  margin-left: 40%;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 650px){
+  .footer a {
+    font-size: 10px;
+  }
+  .copyright-footer{
+    margin-left: 0%;
+    text-align: center;
+  }
+}

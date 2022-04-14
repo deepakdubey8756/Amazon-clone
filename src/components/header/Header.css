@@ -1,0 +1,223 @@
+/* **************************** styles related to top header **********************/
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(35 47 63);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.header-top {
+  align-items: center;
+  display: flex;
+  padding-bottom: 10px;
+}
+.header_logo {
+  width: 10%;
+  cursor: pointer;
+  object-fit: contain;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-userAddress {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.header-userAddress-icon {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.header-userAddress-name {
+  display: flex;
+  flex-direction: column;
+}
+.header-userAddress-fname {
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+}
+.header-userAddress-lname {
+  color: white;
+  font-weight: 1000;
+  font-size: 15px;
+}
+.header_search {
+  display: flex;
+  /* flex: 1; */
+  width: 40%;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header_searchInput {
+  height: 12px !important;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border: none;
+}
+
+.header_searchIcon {
+  background-color: rgb(245, 177, 51);
+  padding: 5px;
+  height: 22px !important;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.header-option {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header_optionLineOne {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header_optionLineTwo {
+  font-size: 16px;
+  font-weight: 1000;
+}
+.header-shopping-cart {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.header-shopping-cart-name {
+  color: white;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+/* **********************header bottom part**************************************/
+
+.header-bottom {
+  background-color: rgb(35 47 63);
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.header-cat {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+.header-sidebar {
+  display: none;
+}
+.header-mob-cat {
+  display: none;
+}
+
+.header-cat-options {
+  color: white;
+  margin-left: 1%;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 0.5px solid orange;
+  cursor: pointer;
+}
+
+.header-cat-options:hover {
+  color: rgb(219, 217, 217);
+}
+
+.header-sidebar-icon {
+  margin-left: 4px;
+  margin-right: 3px;
+}
+
+.active {
+  border-bottom: 0.5px solid white;
+  font-weight: 800;
+}
+
+/* ****************************************** Making mobile responsive********************************* */
+@media screen and (max-width: 820px) and (min-width: 650px) {
+  .header-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header-userAddress {
+    display: none;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-cat {
+    display: none;
+  }
+
+  .header-sidebar {
+    display: flex;
+    width: 10%;
+    padding-left: 10px;
+  }
+  .header-mob-cat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: center;
+  }
+  .header-mob-options {
+    color: white;
+  }
+  .header-mob-cat-fname {
+    font-size: 13px;
+  }
+  .header-mob-cat-lname {
+    font-weight: 800;
+  }
+}
+.disabled {
+  display: none;
+}
+
+@media screen and (max-width:650px){
+  .header{
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header_searchInput {
+    height: 15px !important;
+    width: 37vw;
+  }
+  
+  .header_searchIcon {
+    background-color: rgb(245, 177, 51);
+    padding: 5px;
+    height: 25px !important;
+  }
+  .header-shopping-cart {
+    margin-right: 0px;
+    margin-left: 2rem;
+  }
+  .header-shopping-cart-name {
+    color: white;
+    font-weight: 800;
+    padding-top: 10px;
+  }
+  
+}
